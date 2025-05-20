@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="task11.TriangleCalculationController"
+            prefWidth="350" prefHeight="320">
+    <VBox spacing="10" alignment="CENTER" layoutX="50" layoutY="20">
+        <Label text="Треугольник" style="-fx-font-size:16px;"/>
+        <TextField fx:id="fieldA" promptText="Сторона a"/>
+        <TextField fx:id="fieldB" promptText="Сторона b"/>
+        <TextField fx:id="fieldC" promptText="Сторона c"/>
+        <TextField fx:id="tableNameField" promptText="Имя таблицы для сохранения"/>
+        <Button text="Вычислить и сохранить" onAction="#onCalculate"/>
+        <TextArea fx:id="resultArea" prefRowCount="6" editable="false"/>
+        <Button text="Назад" onAction="#onBack"/>
+    </VBox>
+</AnchorPane>

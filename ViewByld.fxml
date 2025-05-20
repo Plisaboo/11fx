@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="task11.ViewByIdController"
+            prefWidth="350" prefHeight="300">
+    <VBox spacing="10" alignment="CENTER" layoutX="50" layoutY="20">
+        <Label text="Вывод данных по ID" style="-fx-font-size:16px;"/>
+        <ComboBox fx:id="tableCombo" promptText="Выберите таблицу"/>
+        <TextField fx:id="idField" promptText="ID записи"/>
+        <Button text="Показать" onAction="#onShow"/>
+        <TextArea fx:id="resultArea" prefRowCount="6" editable="false"/>
+        <Button text="Назад" onAction="#onBack"/>
+    </VBox>
+</AnchorPane>

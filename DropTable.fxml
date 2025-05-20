@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="task11.DropTableController"
+            prefWidth="350" prefHeight="250">
+    <VBox spacing="10" alignment="CENTER" layoutX="50" layoutY="20">
+        <Label text="Удалить таблицу" style="-fx-font-size:16px;"/>
+        <ComboBox fx:id="tableCombo" promptText="Выберите таблицу"/>
+        <Button text="Удалить" onAction="#onDrop"/>
+        <TextArea fx:id="resultArea" prefRowCount="3" editable="false"/>
+        <Button text="Назад" onAction="#onBack"/>
+    </VBox>
+</AnchorPane>

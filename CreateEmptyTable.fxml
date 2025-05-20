@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="task11.CreateEmptyTableController"
+            prefWidth="300" prefHeight="200">
+    <VBox spacing="10" alignment="CENTER" layoutX="50" layoutY="20">
+        <Label text="Создать пустую таблицу" style="-fx-font-size:16px;"/>
+        <TextField fx:id="tableNameField" promptText="Имя новой таблицы"/>
+        <Button text="Создать" onAction="#onCreate"/>
+        <Button text="Назад" onAction="#onBack"/>
+    </VBox>
+</AnchorPane>
